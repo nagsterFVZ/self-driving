@@ -4,7 +4,7 @@
 
 ``` bash
 # Install Python dependencies
-pip3 install -r requirements.txt
+sudo pip3 install -r requirements.txt
 
 # Install Linux dependencies
 chmod +x packages.bash # Make script executable
@@ -15,4 +15,7 @@ flask run
 
 # Run Server on all connections
 flask run --host=0.0.0.0
+
+
+gunicorn --bind 0.0.0.0:8080 wsgi:app
 ```

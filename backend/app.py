@@ -1,9 +1,10 @@
 #Import necessary libraries
-from flask import Flask, render_template, Response
+from flask import Flask, render_template, Response, jsonify
 from picamera2 import Picamera2
 from libcamera import Transform
 import cv2
 import time
+from gpiozero import CPUTemperature
 
 picam2 = Picamera2()
 camera_config = picam2.create_video_configuration(main={"format": 'XRGB8888', "size": (1280, 720)}, transform=Transform(vflip=0))
@@ -28,3 +29,8 @@ def index():
 @app.route('/video_feed')
 def video_feed():
     return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
+
+@app.route("/temps")
+def temps():
+    cpu = CPUTemperature()
+    return jsonify({'cpu': cpu.temperature})

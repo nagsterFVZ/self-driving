@@ -1,4 +1,0 @@
-flask==2.2.2
-numpy==1.23.3
-imutils==0.5.4
-python-dotenv==0.21.0
