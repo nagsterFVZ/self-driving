@@ -19,3 +19,8 @@ flask run --host=0.0.0.0
 
 gunicorn --bind 0.0.0.0:8080 wsgi:app
 ```
+
+## Sources
+|Part|Source|
+|---|---|
+|MPU9255 Readout|https://makersportal.com/blog/2019/11/11/raspberry-pi-python-accelerometer-gyroscope-magnetometer|
