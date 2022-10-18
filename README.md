@@ -21,6 +21,7 @@ gunicorn --bind 0.0.0.0:8080 wsgi:app
 ```
 
 ## Sources
-|Part|Source|
+|Description|Source|
 |---|---|
 |MPU9255 Readout|https://makersportal.com/blog/2019/11/11/raspberry-pi-python-accelerometer-gyroscope-magnetometer|
+|Installing CircuitPython Libraries on Raspberry Pi|https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuitpython-on-raspberry-pi|

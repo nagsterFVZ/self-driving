@@ -4,3 +4,5 @@ class CpuTemp():
     def poll():
         cpu = CPUTemperature()
         return cpu.temperature
+
+print(CpuTemp.poll())

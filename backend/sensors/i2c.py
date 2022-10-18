@@ -1,12 +1,19 @@
 from mpu9255_i2c import *
 import ADS1115
-ads = ADS1115.ADS1115(address=0x49)
+import numpy
+ads = ADS1115.ADS1115(address=0x48)
+
+def tempProbes():
+    mVolt = ads.readADCSingleEnded(3)
+    temp = numpy.log((1.18467/(mVolt/1000))-0.3899)/-0.040978
+    print("{:.0f} degrees celcius".format(temp))
+
 
 while 1:
-    volt = ads.readADCSingleEnded(3)
-    print("{:.0f} mV measured for AN0".format(volt))
-    time.sleep(1)
-    
+    # tempProbes()
+    volt = ads.readADCSingleEnded(0)*2.2
+    print(volt)
+    time.sleep(1)    
 
 # time.sleep(1) # delay necessary to allow mpu9250 to settle
 
