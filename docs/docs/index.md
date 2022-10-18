@@ -7,7 +7,7 @@ hero:
   tagline: A Fontys BeCreative Engineering minor project conducted in 2022
   actions:
     - theme: brand
-      text: The Project
+      text: Open the Project
       link: /project/
     - theme: alt
       text: View on GitHub

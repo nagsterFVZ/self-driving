@@ -16,8 +16,13 @@ export default {
                     text: 'Introduction',
                     items: [
                         { text: 'The Project', link: '/project/' },
-                        { text: 'Research', link: '/project/research' },
                         { text: 'Parts', link: '/project/-' },
+                    ]
+                },
+                {
+                    text: 'Research',
+                    items: [
+                    { text: 'Control System', link: '/project/research/control' },
                     ]
                 },
                 {
@@ -44,7 +49,7 @@ export default {
             ],
             '/blogs/': [
                 {
-                    text: 'Blogs',
+                    text: 'Personal Blogs',
                     items: [
                         { text: 'Floris', link: '/blogs/floris' },
                     ]
