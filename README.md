@@ -20,6 +20,10 @@ flask run --host=0.0.0.0
 gunicorn --bind 0.0.0.0:8080 wsgi:app
 ```
 
+## Project Structure Overview
+![Project Diagram](https://i.imgur.com/POkYepL.png)
+
+
 ## Sources
 |Description|Source|
 |---|---|
