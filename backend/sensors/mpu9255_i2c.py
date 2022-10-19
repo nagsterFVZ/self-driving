@@ -1,8 +1,5 @@
-# this is to be saved in the local folder under the name "mpu9250_i2c.py"
-# it will be used as the I2C controller and function harbor for the project 
-# refer to datasheet and register map for full explanation
-
 import smbus2,time
+import json
 
 def MPU6050_start():
     # alter sample rate (stability)
@@ -48,31 +45,34 @@ def read_raw_bits(register):
         value -= 65536
     return value
 
-def mpu6050_conv():
+def mpu6050_conv_accel():
     # raw acceleration bits
     acc_x = read_raw_bits(ACCEL_XOUT_H)
     acc_y = read_raw_bits(ACCEL_YOUT_H)
     acc_z = read_raw_bits(ACCEL_ZOUT_H)
 
-    # raw temp bits
-##    t_val = read_raw_bits(TEMP_OUT_H) # uncomment to read temp
+    a_x = (acc_x/(2.0**15.0))*accel_sens
+    a_y = (acc_y/(2.0**15.0))*accel_sens
+    a_z = (acc_z/(2.0**15.0))*accel_sens
+
+##    temp = ((t_val)/333.87)+21.0 # uncomment and add below in return
+    res = {"name":"accel", "value": {"ax": a_x,"ay": a_y,"az": a_z}}
+    return res
+
+def mpu6050_conv_gyro():
     
     # raw gyroscope bits
     gyro_x = read_raw_bits(GYRO_XOUT_H)
     gyro_y = read_raw_bits(GYRO_YOUT_H)
     gyro_z = read_raw_bits(GYRO_ZOUT_H)
 
-    #convert to acceleration in g and gyro dps
-    a_x = (acc_x/(2.0**15.0))*accel_sens
-    a_y = (acc_y/(2.0**15.0))*accel_sens
-    a_z = (acc_z/(2.0**15.0))*accel_sens
-
     w_x = (gyro_x/(2.0**15.0))*gyro_sens
     w_y = (gyro_y/(2.0**15.0))*gyro_sens
     w_z = (gyro_z/(2.0**15.0))*gyro_sens
 
 ##    temp = ((t_val)/333.87)+21.0 # uncomment and add below in return
-    return a_x,a_y,a_z,w_x,w_y,w_z
+    res = {"name":"gyro", "value": {"wx": w_x,"wy": w_y,"wz": w_z}}
+    return res
 
 def AK8963_start():
     bus.write_byte_data(AK8963_ADDR,AK8963_CNTL,0x00)
@@ -113,7 +113,8 @@ def AK8963_conv():
     m_y = (mag_y/(2.0**15.0))*mag_sens
     m_z = (mag_z/(2.0**15.0))*mag_sens
 
-    return m_x,m_y,m_z
+    res = {"name":"mag", "value": {"mx": m_x,"my": m_y,"mz": m_z}}
+    return res
     
 # MPU6050 Registers
 MPU6050_ADDR = 0x68

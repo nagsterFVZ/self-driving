@@ -3,6 +3,5 @@ from gpiozero import CPUTemperature
 class CpuTemp():
     def poll():
         cpu = CPUTemperature()
-        return cpu.temperature
-
-print(CpuTemp.poll())
+        res = {"name": "temp_cpu", "value": cpu.temperature}
+        return res
