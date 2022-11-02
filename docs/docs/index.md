@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Self Steering
   text: Car
-  tagline: A Fontys BeCreative Engineering minor project conducted in 2022 1
+  tagline: A Fontys BeCreative Engineering minor project conducted in 2022
   actions:
     - theme: brand
       text: Open the Project

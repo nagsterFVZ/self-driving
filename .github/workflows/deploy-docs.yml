@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Connect over SSH
-        with:
+        env:
           SSH-KEY: ${{ secrets.SSH_KEY }}
         run: |
-          ssh -i "%SSH-KEY%" root@distillation.dev
+          ssh -i "$SSH-KEY" root@distillation.dev
