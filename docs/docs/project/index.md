@@ -19,7 +19,7 @@ const members = [
   {
     avatar: corne,
     name: 'Corné de Beer',
-    title: 'Technician',
+    title: 'Electronics & Power Delivery',
     links: [
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/corn%C3%A9-de-beer/' }
     ]
@@ -27,7 +27,7 @@ const members = [
   {
     avatar: daan,
     name: 'Daan van de Ven',
-    title: 'Technician',
+    title: 'Differential & Manufacturing',
     links: [
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/daanvandevennl/' }
     ]
@@ -35,7 +35,7 @@ const members = [
   {
     avatar: defaultPic,
     name: 'Michael Vingerhoets',
-    title: 'Technician',
+    title: 'Computer Vission & Electronics',
     links: [
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/michael-vingerhoets-60b9321ab/' }
     ]
@@ -43,7 +43,7 @@ const members = [
   {
     avatar: defaultPic,
     name: 'Tom Leeuwen',
-    title: 'Technician',
+    title: 'Chassis & Modelling',
     // links: [
     //   { icon: 'linkedin', link: 'https://www.linkedin.com/in/corn%C3%A9-de-beer/' }
     // ]
@@ -51,7 +51,7 @@ const members = [
   {
     avatar: rane,
     name: 'Rane van de Pas',
-    title: 'Technician',
+    title: 'Chassis & Modelling',
     links: [
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/rane-van-de-pas-a1aa75188/' }
     ]
@@ -59,7 +59,7 @@ const members = [
   {
     avatar: laurens,
     name: 'Laurens Nauta',
-    title: 'Technician',
+    title: 'Suspension & Chassis',
     links: [
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/laurens-nauta-6024591a3/' }
     ]
