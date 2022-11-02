@@ -13,3 +13,5 @@ Adjusting suspension to fit our specifications (20cm width) and researching stee
 Putting the parts we have so far in SolidWorks, designing rear suspension and thinking about how to power the rear wheels
 ## Week 7: 17-10-2022
 Visualizing the steering, dampers and drivetrain in CAD. (Documenting at home since public transport is striking again).
+## Week 8: 31-10-2022
+Finishing the rear suspension mounts, mounts for differential and the last finishing touches of the frame for the first prototype print. 
