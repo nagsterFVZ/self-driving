@@ -59,7 +59,7 @@ const members = [
   {
     avatar: laurens,
     name: 'Laurens Nauta',
-    title: 'Suspension & Chassis',
+    title: 'Steering & Drivetrain',
     links: [
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/laurens-nauta-6024591a3/' }
     ]
