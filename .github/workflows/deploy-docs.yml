@@ -1,4 +1,4 @@
-name: deploy
+name: deploy-docs
 
 on:
   push:
@@ -12,6 +12,8 @@ jobs:
     name: Deploy Docs
     runs-on: ubuntu-latest
     steps:
-      - name: test
+      - name: Connect over SSH
+        with:
+          SSH-KEY: ${{ secrets.SSH_KEY }}
         run: |
-          echo "Bitch"
+          ssh -i "%SSH-KEY%" root@distillation.dev
