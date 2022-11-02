@@ -31,7 +31,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            cd ~/self-driving/docs
+            cd /home/self-driving/docs
             git pull
             npm i
             npm run docs:build
