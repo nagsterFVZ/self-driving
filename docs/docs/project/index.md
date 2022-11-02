@@ -69,6 +69,6 @@ const members = [
 
 # Our Team
 
-The team that worked on the project during our BeCreative Engineering minor at Fontys Eindhoven
+The team that worked on the project during our BeCreative Engineering minor at Fontys Eindhoven from September 2022 till January 2023
 
 <VPTeamMembers size="small" :members="members" />
