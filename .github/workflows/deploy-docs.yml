@@ -23,7 +23,7 @@ jobs:
       - name: Adding Known Hosts
         run: ssh-keyscan -p ${{ secrets.SSH_PORT}} -H ${{ secrets.SSH_HOST }}  >> ~/.ssh/known_hosts
 
-      - name: Restart Node Server
+      - name: Pull and build Docs
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
@@ -33,5 +33,7 @@ jobs:
           script: |
             cd /home/self-driving/docs
             git pull
-            npm i
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
+            npm install
             npm run docs:build
