@@ -15,4 +15,4 @@ Putting the parts we have so far in SolidWorks, designing rear suspension and th
 Visualizing the steering, dampers and drivetrain in CAD. (Documenting at home since public transport is striking again).
 ## Week 8: 31-10-2022
 Finishing the rear suspension mounts, mounts for differential and the last finishing touches of the frame for the first prototype print. 
-![RC car prototype](./images/Rc-car-prototype.jpg) 
+![RC car prototype](./images/Rc-car-prototype.JPG) 
