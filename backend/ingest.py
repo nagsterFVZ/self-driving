@@ -24,7 +24,7 @@ sensors = [
 # ---------
 
 r = redis.Redis(host='localhost', port=6379, db=0) # Initialize Redis connection
-data_retention = 600000 # Time in ms before data is deleted, 600000 = 10min
+data_retention = 360000 # Time in ms before data is deleted, 600000 = 10min
 
 def create_time_series():
     print("⏱  Creating Time Series")
@@ -60,4 +60,4 @@ print("📡  Continous sensor polling started")
 starttime = time.time()
 while True:
     poll_sensors()
-    time.sleep(1.0 - ((time.time() - starttime) % 1.0))
+    time.sleep(0.1 - ((time.time() - starttime) % 0.1))
