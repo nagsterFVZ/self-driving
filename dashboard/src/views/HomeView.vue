@@ -12,11 +12,13 @@ onMounted(() => {
 
 const stats = ref({});
 async function getStats() {
-  await fetch("http://127.0.0.1:8080/stats", {
+  await fetch("/api/stats", {
     method: "GET",
   }).then((response) => {
-    console.log(response);
-    stats.value = response;
+    response.json().then((data) => {
+      stats.value = data;
+      console.log(stats.value);
+    });
   });
 }
 </script>
