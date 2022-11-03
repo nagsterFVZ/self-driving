@@ -1,6 +1,7 @@
 import redis
 import json
 import time
+from datetime import datetime
 
 # Sensors #
 from sensors.cpuTemp import CpuTemp
@@ -43,13 +44,14 @@ def create_time_series():
                 print("     🟢 " + sensor["name"])
 
 def poll_sensors():
+    now = int(datetime.utcnow().timestamp()*1e3)
     for sensor in sensors:
         val = sensor["script"].poll()["value"]
         if type(val) is dict:
             for x in val:
-                r.ts().add(f'{sensor["name"]}_{x}', "*", val[x])
+                r.ts().add(f'{sensor["name"]}_{x}', now, val[x])
         else:
-            r.ts().add(sensor["name"], "*", val)
+            r.ts().add(sensor["name"], now, val)
 
 create_time_series()
 
