@@ -5,7 +5,6 @@ module.exports = {
   },
   {
     name   : "flask-api",
-    script : "./backend/app.py",
-    args : "--host=0.0.0.0"
+    script : "./backend/app.py"
   }]
 }
