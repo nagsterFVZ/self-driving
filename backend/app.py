@@ -53,12 +53,12 @@ def temps():
 
 @app.route("/stats")
 def stats():
-    response = {}
+    data = {}
     now = int(datetime.utcnow().timestamp()*1e3)
     for sensor in sensors:
         if "subs" in sensor:
             for sub in sensor["subs"]:
-                response[f'{sensor["name"]}_{sub}'] = r.ts().range(f'{sensor["name"]}_{sub}', now-300000, now)
+                data[f'{sensor["name"]}_{sub}'] = r.ts().range(f'{sensor["name"]}_{sub}', now-300000, now)
         else:
-            response[f'{sensor["name"]}'] = r.ts().range(f'{sensor["name"]}', now-300000, now)
-    return jsonify(response)
+            data[f'{sensor["name"]}'] = r.ts().range(f'{sensor["name"]}', now-300000, now)
+    return jsonify(data)
