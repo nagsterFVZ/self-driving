@@ -38,20 +38,20 @@ def gen_frames():
         yield (b'--frame\r\n'
                 b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')  # concat frame one by one and show result
 
-@app.route('/')
+@app.route('/api')
 def index():
     return render_template('index.html')
 
-@app.route('/video_feed')
+@app.route('/api/video_feed')
 def video_feed():
     return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route("/temps")
+@app.route("/api/temps")
 def temps():
     cpu = CPUTemperature()
     return jsonify({'cpu': cpu.temperature})
 
-@app.route("/stats")
+@app.route("/api/stats")
 def stats():
     data = {}
     now = int(datetime.utcnow().timestamp()*1e3)
