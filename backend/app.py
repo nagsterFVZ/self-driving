@@ -62,3 +62,6 @@ def stats():
         else:
             data[f'{sensor["name"]}'] = r.ts().range(f'{sensor["name"]}', now-300000, now)
     return jsonify(data)
+
+if __name__ == "__main__":
+    app.run()
