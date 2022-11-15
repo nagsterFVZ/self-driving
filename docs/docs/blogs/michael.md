@@ -18,4 +18,10 @@ This week I have been working on the prototype of the electrical system and I ha
 I have been working on the electrical system and on the Requirements Document
 
 ## Week 7: 17-10-2022
-I have looking into the Pynq Z2 and the posibility of accelerating line detection using the Pynq
+I have been looking into the Pynq Z2 and the possibility of accelerating line detection using the Pynq
+
+## Week 8: 31-10-2022
+I have been working on how to program the Pynq Z2.
+
+## Week 9: 7-11-2022
+I have been working on the presentation.
