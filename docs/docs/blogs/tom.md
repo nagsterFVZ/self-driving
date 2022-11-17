@@ -11,3 +11,9 @@ Did research for the front suspension and made a lot of prototypes. We decided o
 Perfecting the prototypes made in week 4 and starting research on the rear axle/suspension. Also started research on how to steer the car.
 ## Week 6: 10-10-2022
 Did research on how to steer the car. Made a decision on what type of rear suspension to use after the meeting with Chris. Also started on chassis design together with Rane. Wrote an update of my PDP.
+## Week 7: 17-10-2022
+Further work on the chassis and finished the suspension. We have started work on the drivetrain and how to mount the diff and the gears in the chassis. 
+## Week 8: 31-10-2022
+Final optimizations on the chassis to make it ready to print. Try to iron out most of the issues/mistakes. The first version of the chassis was sent to the printer on thursday.
+## Week 9: 07-11-2022 - Midterm
+This week was mainly about optimizing the chassis that we had, there were some errors and things we forgot, so we started on fixing that. Some time was also spent in making the presentation for the midterm.
