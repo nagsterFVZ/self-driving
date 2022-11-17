@@ -16,3 +16,5 @@ Visualizing the steering, dampers and drivetrain in CAD. (Documenting at home si
 ## Week 8: 31-10-2022
 Finishing the rear suspension mounts, mounts for differential and the last finishing touches of the frame for the first prototype print. 
 ![RC car prototype](./images/Rc-car-prototype.jpg) 
+## Week 9: 07-11-2022 - Midterm
+Assembling the prototype of the chassis, writing down problems we find so we can fix those. Midterm preparations.

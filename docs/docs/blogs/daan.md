@@ -23,3 +23,13 @@ This week I was finishing the fifth version of the differential and printing it.
 
 ## Week 8: 31-10-2022
 This week I started to print version 5 of the Diff and the final gears. Hopefully this Differential will work as designed. I ordered the last Bearings from Arie. We had a meeting with the team to discuss everything we wanted to have finished before Thursday for the midterm.
+## Week 9: 07-11-2022 - Midterm
+This week I spoke with the Objexlab department to print the gears in SLA Tough 2000. Together with them we decided on the best print settings. These gears came out great.
+The differential was assembled and worked great besides not being completely torqued down. This issue will be resolved in week 10.
+## Week 10: 14-11-2022
+This week I Learned how to use the cnc machine and made flat surfaces on the axles. This made me realise some design flaws in the axles. I am redesigning all the axles and I am going to produce them this week. I am hoping to have a functioning and ready to mount Differential by Monday next week. After that I will focus on something new.
+## Feedback Sessions
+### First Feedback Session: 22-09-2022
+PDP was good except there were some wrong terms used to describe personal interests. These were resolved before the next meeting.
+### Second Feedback Session: 13-10-2022
+My PDP revision was good and Wiely was positive about the Trello page. 
