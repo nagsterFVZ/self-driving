@@ -18,3 +18,6 @@ Finishing the rear suspension mounts, mounts for differential and the last finis
 ![RC car prototype](./images/Rc-car-prototype.jpg) 
 ## Week 9: 07-11-2022 - Midterm
 Assembling the prototype of the chassis, writing down problems we find so we can fix those. Midterm preparations.
+## Week 10: 14-11-2022
+This week Tom and I focussed on improving the turning circle of our car, we couldn’t make it round a 180 degree turn on the nxp track. First we made an adapter plate for our servo saver to create a larger center distance from the servo, this would greatly increase the turning radius.![Servo adapterplate](./images/Servo-adapterplate.jpg)
+Second thing we improved was the chassis, we shortened the wheelbase by around 2.5 centimeters and the total length of the car was reduced by around 4.5 centimeters.![New Chassis assembly](./images/New-Chassis.jpg)
