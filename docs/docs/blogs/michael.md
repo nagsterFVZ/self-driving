@@ -25,3 +25,6 @@ I have been working on how to program the Pynq Z2.
 
 ## Week 9: 7-11-2022
 I have been working on the presentation.
+
+## Week 10: 14-11-2022
+I have been working on troubleshooting why the software used to program the Pynq z2, doesn't work.
