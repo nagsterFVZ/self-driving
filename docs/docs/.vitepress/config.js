@@ -22,7 +22,7 @@ export default {
                     text: 'Introduction',
                     items: [
                         { text: 'The Project', link: '/project/' },
-                        { text: 'Parts', link: '/project/-' },
+                        { text: 'Parts', link: '/project/parts' },
                     ]
                 },
                 {
