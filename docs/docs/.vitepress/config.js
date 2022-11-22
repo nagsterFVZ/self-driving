@@ -32,9 +32,9 @@ export default {
                     ]
                 },
                 {
-                    text: 'Installation',
+                    text: 'Control System',
                     items: [
-                    { text: 'Introduction', link: '/project/-' },
+                    { text: 'Installation', link: '/project/installation' },
                     { text: 'Research', link: '/project/-' },
                     ]
                 },
