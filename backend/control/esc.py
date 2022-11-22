@@ -44,7 +44,12 @@ class ESC:
             return 7.5
         if(percent < -100):
             return 7.5
-        return ((5/200)*percent)+7.5
+        if(percent == 0):
+            return 7.5
+        if(percent < 0):
+            return 0.02*percent+7
+        if(percent > 0):
+            return 0.02*percent+8
     
 esc = ESC()
 # esc.cal_phase_1()
