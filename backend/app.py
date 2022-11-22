@@ -22,10 +22,10 @@ sensors = [
     ]
 
 
-# picam2 = Picamera2()
-# camera_config = picam2.create_video_configuration(main={"format": 'XRGB8888', "size": (1920, 1080)}, transform=Transform(vflip=0))
-# picam2.configure(camera_config)
-# picam2.start()
+picam2 = Picamera2()
+camera_config = picam2.create_video_configuration(main={"format": 'XRGB8888', "size": (1920, 1080)}, transform=Transform(vflip=0))
+picam2.configure(camera_config)
+picam2.start()
 time.sleep(2.0)
 
 app = Flask(__name__)

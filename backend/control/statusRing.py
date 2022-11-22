@@ -10,6 +10,7 @@ pixels = neopixel.NeoPixel(
     pixel_pin, num_pixels, brightness=1, auto_write=True, pixel_order=ORDER
 )
 pixels.fill((255,200,0))
+pixels.show()
 # pixels[0] = (0,0,0)
 # pixels[1] = (0,0,0)
 # pixels[2] = (0,0,0)
