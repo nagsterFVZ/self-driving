@@ -1,5 +1,4 @@
 import { defineComponent, h } from "vue";
-import type { PropType } from "vue";
 
 import { Line } from "vue-chartjs";
 import {
@@ -12,7 +11,6 @@ import {
   PointElement,
   CategoryScale,
 } from "chart.js";
-import type { Plugin } from "chart.js";
 
 ChartJS.register(
   Title,
@@ -47,44 +45,56 @@ export default defineComponent({
       type: String,
     },
     styles: {
-      type: Object as PropType<Partial<CSSStyleDeclaration>>,
+      type: Object,
       default: () => {},
     },
     plugins: {
-      type: Array as PropType<Plugin<"line">[]>,
+      type: Array,
       default: () => [],
+    },
+    chartData: {
+      type: Object,
+      required: true,
     },
   },
   setup(props) {
-    const chartData = {
-      labels: ["10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30"],
-      datasets: [
-        {
-          label: "CPU Temp",
-          backgroundColor: "#f87979",
-          data: [56, 63, 62, 59, 57, 58, 60],
-          tension: 0.4,
-        },
-      ],
-    };
+
+    //console.log("Graph", props.chartData)
+    // const chartData = {
+    //   labels: ["10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30"],
+    //   datasets: [
+    //     {
+    //       label: "CPU Temp",
+    //       backgroundColor: "#f87979",
+    //       data: [56, 63, 62, 59, 57, 58, 60],
+    //       tension: 0.4,
+    //     },
+    //   ],
+    // };
 
     const chartOptions = {
       responsive: true,
       maintainAspectRatio: false,
       scales: {
         y: {
+          // min: 3.7,
+          // max: 3.8,
           ticks: {
-            callback: function (value: string) {
-              return value + "°C";
-            },
+            stepSize: 1,
+            // callback: function (value: string) {
+            //   return value + "°C";
+            // },
           },
         },
+        x: {
+          // type: "time"
+        }
       },
     };
 
     return () =>
       h(Line, {
-        chartData,
+        chartData: props.chartData,
         chartOptions,
         chartId: props.chartId,
         width: props.width,

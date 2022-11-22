@@ -22,10 +22,10 @@ sensors = [
     ]
 
 
-# picam2 = Picamera2()
-# camera_config = picam2.create_video_configuration(main={"format": 'XRGB8888', "size": (1920, 1080)}, transform=Transform(vflip=0))
-# picam2.configure(camera_config)
-# picam2.start()
+picam2 = Picamera2()
+camera_config = picam2.create_video_configuration(main={"format": 'XRGB8888', "size": (1920, 1080)}, transform=Transform(vflip=0))
+picam2.configure(camera_config)
+picam2.start()
 time.sleep(2.0)
 
 app = Flask(__name__)
@@ -38,27 +38,30 @@ def gen_frames():
         yield (b'--frame\r\n'
                 b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')  # concat frame one by one and show result
 
-@app.route('/')
+@app.route('/api')
 def index():
     return render_template('index.html')
 
-@app.route('/video_feed')
+@app.route('/api/video_feed')
 def video_feed():
     return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route("/temps")
+@app.route("/api/temps")
 def temps():
     cpu = CPUTemperature()
     return jsonify({'cpu': cpu.temperature})
 
-@app.route("/stats")
+@app.route("/api/stats")
 def stats():
-    response = {}
+    data = {}
     now = int(datetime.utcnow().timestamp()*1e3)
     for sensor in sensors:
         if "subs" in sensor:
             for sub in sensor["subs"]:
-                response[f'{sensor["name"]}_{sub}'] = r.ts().range(f'{sensor["name"]}_{sub}', now-300000, now)
+                data[f'{sensor["name"]}_{sub}'] = r.ts().range(f'{sensor["name"]}_{sub}', now-300000, now)
         else:
-            response[f'{sensor["name"]}'] = r.ts().range(f'{sensor["name"]}', now-300000, now)
-    return jsonify(response)
+            data[f'{sensor["name"]}'] = r.ts().range(f'{sensor["name"]}', now-300000, now)
+    return jsonify(data)
+
+if __name__ == "__main__":
+    app.run()
