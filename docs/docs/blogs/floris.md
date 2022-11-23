@@ -23,5 +23,15 @@ I spent this week working on the Dashboard for showing the different sensor data
 This week we had our midterm presentation, so most of the week was spent preparing our presentation and demo. Michael and Tom presented our project while I was responsible for the demo and Q&A. We sadly had some techincall difficulties with the car startup which inpacted the demo. Because of this for the final presentation I will ensure that we have a pre-recorded demo in the event that the live demo has issues again. Further this week I did some more changes to the dashboard in order to get it working better.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yt2jBFw0TAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Week 10: 14-11-2022
+This week was spent doing a lot of the administrative tasks for the project. These tasks were also geared towards my PDP goals. For my soft goal of budgeting I went and reworked our part list/budget into a good structured document. Now we can easy see what parts have been ordered, what we are borrowing and how much we have spent. I also added this part list to our documentation.
+
+I also spent a good amount of time updating the content of all the blogs. Lastly I spent time on doing some more research into how best we can controll the ESC using python on our Pi.
+## Week 11: 21-11-2022
+I started the week working on implementing last weeks research into controlling the ESC. After some trial and error I managed to get it working. Turns out we do not need a PWM controller and can use the PWM thats on the Pi itself. The ESC responds to a frquency of 50Hz with a duty cycle of 5%-10%. I then had to implement the inputs to mimic the calibration and arming sequence on the ESC.
+
+Due to some issues with WiFi on the Pi that I discovered a few weeks back, we have had to start from a new install of Pi OS. So this week I spent 2 days setting up the new install. While doing this I documented every step of the process so that anyone else having to setup the project has a clear guide. The first major pieces of this guide are completed and visible [here](https://becreative.distillation.dev/project/installation.html). The guide still needs to be completed with the setup instructions for the Dashboard, those will follow next week.
+
+Lastly this week I am busy getting the ESC funtionality added to the dashboard so that we can start the motor and such from there.
 ## Feedback Sessions
 Writeup of feedback sessions coming

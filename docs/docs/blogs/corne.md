@@ -36,3 +36,12 @@ In deze week ben ik verder gegaan met het maken van de PCB. toen de PCB af was h
 ## Week 7: 17-10-2022
 
 In deze week ben ik verder gegaan met het ontwerpen van de behuizing voor de elektronica en heb ik ook mijn PDP bijgewerkt omdat ik in de week hiervoor feedback op heb gehad in de feedback meeting.
+
+## Week 8: 31-10-2022
+In deze week heb ik het ontwerp van de elektronicabox afgemaakt en uitgeprint. Ook heb ik de gelaserde onder en bovenplaat besteld. dit alles was deze week al gelijk binnen dus kan het assembleren beginnen.
+
+## Week 9: 07-11-2022 - Midterm
+Tijdens het assembleren ben ik achter een paar foutjes gekomen. Zo zijn bijvoorbeeld de ventilatoren vanuit de bovenkant niet beschermd tegen het aanraken ervan. Ook zijn we er achter gekomen dat de DC-DC converter niet voldoet aan de stroom eisen dus hebben we een nieuwe uit moeten zoeken. 
+
+## Week 10: 14-11-2022
+In deze week heb ik een aanpassing gemaakt op de onder en bovenkant van de elektronicabox zodat alle componenten er in passen het het veilig is om te gebruiken. Ook hebben we deze week gekeken op welke positie de camera op de auto zal moeten komen. hiervoor ben ik begonnen om een ontwerp te maken.
