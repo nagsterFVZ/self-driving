@@ -17,3 +17,5 @@ Further work on the chassis and finished the suspension. We have started work on
 Final optimizations on the chassis to make it ready to print. Try to iron out most of the issues/mistakes. The first version of the chassis was sent to the printer on thursday.
 ## Week 9: 07-11-2022 - Midterm
 This week was mainly about optimizing the chassis that we had, there were some errors and things we forgot, so we started on fixing that. Some time was also spent in making the presentation for the midterm.
+## Week 10: 14-11-2022
+Started work on optimizing v3 of the chassis, and sent v2 to the printer. V3 will be easier to print and uses a lot less material. We shaved about 9 hours off the printing time. We also sent the motor mount to the laser machine and made the bend in the mount

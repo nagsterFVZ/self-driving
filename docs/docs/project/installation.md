@@ -101,3 +101,20 @@ sudo pip install -r requirements.txt
 ```
 ::: info The command above may warn of installing packages as root, this is fine as its the only project on the system and some of the packages require root installation
 :::
+
+That should be all the setup to get the backend running. Now we just need to install [pm2](https://pm2.keymetrics.io/docs/usage/quick-start/) to manage the different services.
+```bash
+npm install pm2@latest -g
+```
+#### Startup
+To start the whole backend system we just need to run one file, this will start the redis server and have pm2 run the different python scripts.
+```
+# Make sure you are in the root directory of the project
+./start.bash
+``` 
+
+## Extra Setup
+These are some extra seupt steps you can do to add certain functionality. They are not required but can make the project more easy to use.
+### WiFi Access Point
+By creating a WiFi access point you can connect to the Pi without needing to connect a network cable. This is great for when the car is on the track and driving. For this I used the instructions from
+[Raspberry Pi Guide](https://raspberrypi-guide.github.io/networking/create-wireless-access-point) but then slightly modified as we dont need to forward an internet connection.
