@@ -38,7 +38,11 @@ class Esc:
         return True
 
     def control(speed):
-        Esc.pwm.duty_cycle = 5242
+        Esc.pwm.duty_cycle = Esc.speedCalc(speed)
+        return True
+
+    def safe():
+        Esc.pwm.duty_cycle = 0
         return True
 
     #max 6553; min 3276;
@@ -47,7 +51,7 @@ class Esc:
             return 4915
         if(percent < -100):
             return 4915
-        if(percent = 0):
+        if(percent == 0):
             return 4915
         if(percent <= 100 and percent > 0):
             return int(1310 / 100 * percent + 5243)
