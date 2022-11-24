@@ -44,7 +44,12 @@ class Esc:
     #max 6553; min 3276;
     def speedCalc(percent):
         if(percent > 100):
-            return 7.5
+            return 4915
         if(percent < -100):
-            return 7.5
-        return ((5/200)*percent)+7.5
+            return 4915
+        if(percent = 0):
+            return 4915
+        if(percent <= 100 and percent > 0):
+            return int(1310 / 100 * percent + 5243)
+        if(percent >= -100):
+            return int(1310 / 100 * percent + 4587)
