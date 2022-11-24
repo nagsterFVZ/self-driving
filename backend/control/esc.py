@@ -38,7 +38,7 @@ class Esc:
         return True
 
     def control(speed):
-        Esc.pwm.duty_cycle = Esc.speedCalc(speed)
+        Esc.pwm.duty_cycle = 5242
         return True
 
     #max 6553; min 3276;
