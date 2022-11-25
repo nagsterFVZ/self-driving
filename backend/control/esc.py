@@ -30,11 +30,9 @@ class Esc:
         return True
 
     def arm():
-        Esc.pwm.duty_cycle = 0
-        sleep(1)
         Esc.pwm.duty_cycle = Esc.midDuty
-        sleep(1)
-        # Esc.pwm.duty_cycle = 0)
+        sleep(2)
+        Esc.pwm.duty_cycle = 0
         return True
 
     def control(speed):
