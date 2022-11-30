@@ -28,3 +28,6 @@ I have been working on the presentation.
 
 ## Week 10: 14-11-2022
 I have been working on troubleshooting why the software used to program the Pynq z2, doesn't work.
+
+## Week 11: 21-11-2022
+I have been helping Floris with the software. But was not the most productive week for me.
