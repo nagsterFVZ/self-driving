@@ -92,5 +92,10 @@ def esc_control():
     complete = Esc.control(int(speed))
     return jsonify({'complete': complete, "message": f'Speed run at {speed}'})
 
+@app.route("/api/esc/safe")
+def esc_safe():
+    complete = Esc.safe()
+    return jsonify({'complete': complete, "message": "Safe"})
+
 if __name__ == "__main__":
     app.run()
