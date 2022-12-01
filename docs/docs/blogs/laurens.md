@@ -29,3 +29,7 @@ This week I worked on some documentation and the steering. We also had the midte
 
 ## Week 10: 14-11-2022
 The beginning of this week was difficult. After the midterm I did not really know what the next step for me was. The steering was basically done, just some documentation left. next to that we had some discussion about the chassis. I'm of the opinion that we should make more changes and don’t keep going on an older idea.
+
+##Week 11
+This week I started working on trying to get a PYNQ-board to work. I did some pre-work, because we did not have a way to program for the board. We need a different laptop with Ubuntu installed on it. By working on the pynq-board I'm trying to learn how to code C and work with the software for the fpga.
+I also did some work on modeling in solidworks, but that will most likely not be used for the chassis.
