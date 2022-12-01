@@ -19,3 +19,6 @@ Final optimizations on the chassis to make it ready to print. Try to iron out mo
 This week was mainly about optimizing the chassis that we had, there were some errors and things we forgot, so we started on fixing that. Some time was also spent in making the presentation for the midterm.
 ## Week 10: 14-11-2022
 Started work on optimizing v3 of the chassis, and sent v2 to the printer. V3 will be easier to print and uses a lot less material. We shaved about 9 hours off the printing time. We also sent the motor mount to the laser machine and made the bend in the mount
+
+## Week 11: 21-11-2022
+Used a lathe to make front and rear axles, corne told me how to use it. The chassis was also printed with water soluble supports, which was not ideal. The soluble supports left a sticky residue, which was difficult and gross to remove, the process also left a lot of water inside the print.. The soluble supports also took a lot more time, as the plastic first needed to dry, then the chassis could be printed and last the print had to be left in a sink full of water for a day. We decided not to use those anymore in future prints.
