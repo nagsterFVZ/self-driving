@@ -45,3 +45,6 @@ Tijdens het assembleren ben ik achter een paar foutjes gekomen. Zo zijn bijvoorb
 
 ## Week 10: 14-11-2022
 In deze week heb ik een aanpassing gemaakt op de onder en bovenkant van de elektronicabox zodat alle componenten er in passen het het veilig is om te gebruiken. Ook hebben we deze week gekeken op welke positie de camera op de auto zal moeten komen. hiervoor ben ik begonnen om een ontwerp te maken.
+
+## Week 11: 21-11-2022
+In het 2e ontwerp van het chassis zijn de mounting points van de EB verandert en is het zo gemaakt dat de EB makkelijk te verwijderen. Hiervoor heb ik een nieuw onderkant van de EB ontworpen. Ook heb ik deze week de camera mount boven op de EB afgemaakt en gemonteerd.
