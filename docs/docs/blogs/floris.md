@@ -32,6 +32,11 @@ I started the week working on implementing last weeks research into controlling 
 
 Due to some issues with WiFi on the Pi that I discovered a few weeks back, we have had to start from a new install of Pi OS. So this week I spent 2 days setting up the new install. While doing this I documented every step of the process so that anyone else having to setup the project has a clear guide. The first major pieces of this guide are completed and visible [here](https://becreative.distillation.dev/project/installation.html). The guide still needs to be completed with the setup instructions for the Dashboard, those will follow next week.
 
-Lastly this week I am busy getting the ESC funtionality added to the dashboard so that we can start the motor and such from there.
+I finished the week by implementing ESC functionality into the dashboard. I also ran into an issue with noise in the PWM signal to the ESC, I spent a few hours debuging and fixing that.
+
+## Week 12: 28-11-2022
+I started the week by wrapping up adding the ESC functionality into the dashboard. I also had to rewrite some of the ESC control code in order to have better reliability with the arming and calibration sequences.
+
+Next I started working with OpenCV to process image data from the Raspberry Pi Camera. We put the control box on roughly the same hight as the car would be. Then I took some pictures with the camera and started writing the code to filter out the background and leave us with only the track the car is driving on. This process is done in about 5 steps and takes 0.04s per frame. So currently we can process about 20 frames per second. Next I started doing research how we can use this data in TensorFlow. This was mostly research and I am planning to start implementing this over the coming weeks.
 ## Feedback Sessions
 Writeup of feedback sessions coming
