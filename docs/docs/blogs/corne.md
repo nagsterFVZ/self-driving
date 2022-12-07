@@ -48,3 +48,6 @@ In deze week heb ik een aanpassing gemaakt op de onder en bovenkant van de elekt
 
 ## Week 11: 21-11-2022
 In het 2e ontwerp van het chassis zijn de mounting points van de EB verandert en is het zo gemaakt dat de EB makkelijk te verwijderen. Hiervoor heb ik een nieuw onderkant van de EB ontworpen. Ook heb ik deze week de camera mount boven op de EB afgemaakt en gemonteerd.
+
+## Week 12: 28-11-2022
+In deze week ben ik bezig geweest met het assembleren van de nieuwe EB. In het nieuwe ontwerp zaten nog een paar fouten die er uit moesten worden gehaald. Hiernaast ben ik verder gegaan met mijn persoonlijke doelen uit mijn PDP. Zo ben ik bezig geweest met het afstellen van de camera. en heb ik research gedaan naar de software hiervoor.
