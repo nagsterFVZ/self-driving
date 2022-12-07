@@ -31,3 +31,6 @@ I have been working on troubleshooting why the software used to program the Pynq
 
 ## Week 11: 21-11-2022
 I have been helping Floris with the software. But was not the most productive week for me.
+
+## Week 12: 28-11-2022
+I have mostly been acting as tech support with most of my time being spended on cleaning and recalibrating the 3d printer
