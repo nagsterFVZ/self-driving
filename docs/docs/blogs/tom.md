@@ -22,3 +22,6 @@ Started work on optimizing v3 of the chassis, and sent v2 to the printer. V3 wil
 
 ## Week 11: 21-11-2022
 Used a lathe to make front and rear axles, corne told me how to use it. The chassis was also printed with water soluble supports, which was not ideal. The soluble supports left a sticky residue, which was difficult and gross to remove, the process also left a lot of water inside the print.. The soluble supports also took a lot more time, as the plastic first needed to dry, then the chassis could be printed and last the print had to be left in a sink full of water for a day. We decided not to use those anymore in future prints.
+
+## Week 12: 28-11-2022
+I was absent on monday. On tuesday I helped Laurens to setup a spare laptop with linux to be able to program te PYNQ board. For the rest of the week my main priorities were to hand in some assignments for different subjects. 
