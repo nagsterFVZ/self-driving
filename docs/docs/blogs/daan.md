@@ -28,6 +28,13 @@ This week I spoke with the Objexlab department to print the gears in SLA Tough 2
 The differential was assembled and worked great besides not being completely torqued down. This issue will be resolved in week 10.
 ## Week 10: 14-11-2022
 This week I Learned how to use the cnc machine and made flat surfaces on the axles. This made me realise some design flaws in the axles. I am redesigning all the axles and I am going to produce them this week. I am hoping to have a functioning and ready to mount Differential by Monday next week. After that I will focus on something new.
+
+## Week 11: 21-10-2022
+This week I Finished the Differential. In its current form it will be used in the car and is being tested. My schedule for the project has cleared up a bit because the differential is finished, therefore I am starting a completely new aspect of the project which is learning how to use a generative design process for certain parts of the car.
+## Week 12: 28-10-2022
+
+This week we started to assemble the complete car. It made its first few actual metres on a flat surface with an ethernet cable connected. We came across various problems and improvements. I made flat surfaces on the axles to make sure the axle wasn't sliding through the set screws. I evaluated different parts of the wheel mounting system to remove a lot of play in this area. Furthermore I started to dive into the process of creating a generative design and gathering information to start doing calculations next week. 
+
 ## Feedback Sessions
 ### First Feedback Session: 22-09-2022
 PDP was good except there were some wrong terms used to describe personal interests. These were resolved before the next meeting.

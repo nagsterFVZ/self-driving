@@ -14,9 +14,7 @@ After getting Redis working last week, I have spent this week starting to implem
 ## Week 6: 10-10-2022
 This week I have been busy comparing different image detection and machine learning libraries. Besides that I have helped with some brainstorming for the suspension/drivetrain setup and updated my personal development plan. I also found some more useful materials for learning lane detection so I will be looking at those next week.
 ## Week 7: 17-10-2022
-Sadly this week started of pretty bad, we (mostly me) managed to kill my Raspberry Pi 4, this is a bit of a pain seeing as they are out of stock everywhere at the moment.
-![Rest in Pi](./images/deadPi.png)
-Luckily we can borrow Corné's Pi for the time being so the project can carry on. For the rest this week I have spent time creating this documentation website and working on getting the PWM libraries working, for this I am having to make use of blinka. Blinka allows running Circuit-Python libraries in normaly Python
+For most of this week I have spent time creating this documentation website and working on getting the PWM libraries working, for this I am having to make use of blinka. Blinka allows running Circuit-Python libraries in normal Python. It is developed by adafruit and we need it for using many of their other libraries that support some of the sensors we use.
 ## Week 8: 31-10-2022
 I spent this week working on the Dashboard for showing the different sensor data. I also spent some time refing the ingest script which handles getting the data from the sensors. We used to get sensor data every second, we have now changed that to get data 10 times per second and average it to 1 point. This way our data is a lot less prone to errors due to fluctuations and represents are more accurate display of the sensor data.
 ## Week 9: 07-11-2022 - Midterm
@@ -32,6 +30,11 @@ I started the week working on implementing last weeks research into controlling 
 
 Due to some issues with WiFi on the Pi that I discovered a few weeks back, we have had to start from a new install of Pi OS. So this week I spent 2 days setting up the new install. While doing this I documented every step of the process so that anyone else having to setup the project has a clear guide. The first major pieces of this guide are completed and visible [here](https://becreative.distillation.dev/project/installation.html). The guide still needs to be completed with the setup instructions for the Dashboard, those will follow next week.
 
-Lastly this week I am busy getting the ESC funtionality added to the dashboard so that we can start the motor and such from there.
+I finished the week by implementing ESC functionality into the dashboard. I also ran into an issue with noise in the PWM signal to the ESC, I spent a few hours debuging and fixing that.
+
+## Week 12: 28-11-2022
+I started the week by wrapping up adding the ESC functionality into the dashboard. I also had to rewrite some of the ESC control code in order to have better reliability with the arming and calibration sequences.
+
+Next I started working with OpenCV to process image data from the Raspberry Pi Camera. We put the control box on roughly the same hight as the car would be. Then I took some pictures with the camera and started writing the code to filter out the background and leave us with only the track the car is driving on. This process is done in about 5 steps and takes 0.04s per frame. So currently we can process about 20 frames per second. Next I started doing research how we can use this data in TensorFlow. This was mostly research and I am planning to start implementing this over the coming weeks.
 ## Feedback Sessions
 Writeup of feedback sessions coming
