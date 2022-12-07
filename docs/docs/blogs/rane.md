@@ -23,6 +23,8 @@ This week Tom and I focussed on improving the turning circle of our car, we coul
 Second thing we improved was the chassis, we shortened the wheelbase by around 2.5 centimeters and the total length of the car was reduced by around 4.5 centimeters.![New Chassis assembly](./images/New-Chassis.png)
 ## Week 11: 21-11-2022
 This week we printed a new chassis, we did this using 2 materials so we could leave the chassis in water for a day and the supports would dissolve. This wasnt a great succes, the frame was sticky and smaller holes weren't empty of the material. We cleaned it asmuch as needed so we could use the frame. The has to be a working frame so we made some axles for our wheels, mounted the differential and gears. 
+## Week 12: 28-11-2022
+This week was a little les productive for me, still made some changes to the chassis. Also did some testing with Floris to check clearances and if everything runs smoothly. Then I sent the adjusted chassis to the printing lab so we had something to test on. I also did some more documentation. 
 ## Feedback Sessions
 ### First Feedback Session: 22-09-2022
 Write down a date with revision number, the rest was good and no problems were found.
