@@ -34,3 +34,7 @@ I have been helping Floris with the software. But was not the most productive we
 
 ## Week 12: 28-11-2022
 I have mostly been acting as tech support with most of my time being spended on cleaning and recalibrating the 3d printer
+
+
+## PDP Feedback
+  *Keep checking if you're still on the right track. And Stop when you need to.
