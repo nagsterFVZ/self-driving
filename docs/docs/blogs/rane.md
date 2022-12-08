@@ -30,3 +30,5 @@ This week was a little les productive for me, still made some changes to the cha
 Write down a date with revision number, the rest was good and no problems were found.
 ### Second Feedback Session: 13-10-2022
 During the session I asked if there was any feedback, the answer was everything looks good as is, no problems were found. 
+### Third Feedback Session: 08-12-2022
+This session was a little different form the previous, we had to give feedback to eachother instead of getting it from our mentor. After my explanation I didn't recieve feedback from my fellow student. This means I am going to keep doing what I am doing since not getting feedback means I'm doing good work. 
