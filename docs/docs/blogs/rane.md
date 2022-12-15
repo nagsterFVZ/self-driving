@@ -24,9 +24,13 @@ Second thing we improved was the chassis, we shortened the wheelbase by around 2
 ## Week 11: 21-11-2022
 This week we printed a new chassis, we did this using 2 materials so we could leave the chassis in water for a day and the supports would dissolve. This wasnt a great succes, the frame was sticky and smaller holes weren't empty of the material. We cleaned it asmuch as needed so we could use the frame. The has to be a working frame so we made some axles for our wheels, mounted the differential and gears. 
 ## Week 12: 28-11-2022
-This week was a little les productive for me, still made some changes to the chassis. Also did some testing with Floris to check clearances and if everything runs smoothly. Then I sent the adjusted chassis to the printing lab so we had something to test on. I also did some more documentation. 
+This week was a little les productive for me, still made some changes to the chassis. Also did some testing with Floris to check clearances and if everything runs smoothly. Then I sent the adjusted chassis to the printing lab so we had something to test on. We needen a new brushless motor that was compatible with our battery and ESC, we calculated new speeds etc. I also did some more documentation. 
+## Week 12: 05-12-2022
+This week we made obstcles for the track, made some minor modifications to the car that had to be done. We also started thinking about how we wanted our work instruction to be. Also worked on my personal development plan, updated with what I've done the past weeks.
 ## Feedback Sessions
 ### First Feedback Session: 22-09-2022
 Write down a date with revision number, the rest was good and no problems were found.
 ### Second Feedback Session: 13-10-2022
 During the session I asked if there was any feedback, the answer was everything looks good as is, no problems were found. 
+### Third Feedback Session: 08-12-2022
+This session was a little different form the previous, we had to give feedback to eachother instead of getting it from our mentor. After my explanation I didn't recieve feedback from my fellow students. This means I am going to keep doing what I am doing since not getting feedback means I'm doing good work. 

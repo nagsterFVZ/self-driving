@@ -25,3 +25,6 @@ Used a lathe to make front and rear axles, corne told me how to use it. The chas
 
 ## Week 12: 28-11-2022
 I was absent on monday. On tuesday I helped Laurens to setup a spare laptop with linux to be able to program te PYNQ board. For the rest of the week my main priorities were to hand in some assignments for different subjects. I also helped to search for and do the calculations for the new motor, which was ordered at the end of the week.
+
+## Week 13: 05-12-2022
+This week began quite badly, as I stayed home sick. The rest of the week I did some of the smaller things, like updating the front wheelhubs and making a hole in the chassis bigger. I also made some modular obstacles (cubes), which have six identical sides and can be easily made on the laser cutter. We also had a feedback session with Wiely and peer reviewing. There were some small things, but it was good overall. The only points I got were that I need to be more thourough with my documentation and the formulation of my goals.

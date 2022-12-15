@@ -36,5 +36,17 @@ I finished the week by implementing ESC functionality into the dashboard. I also
 I started the week by wrapping up adding the ESC functionality into the dashboard. I also had to rewrite some of the ESC control code in order to have better reliability with the arming and calibration sequences.
 
 Next I started working with OpenCV to process image data from the Raspberry Pi Camera. We put the control box on roughly the same hight as the car would be. Then I took some pictures with the camera and started writing the code to filter out the background and leave us with only the track the car is driving on. This process is done in about 5 steps and takes 0.04s per frame. So currently we can process about 20 frames per second. Next I started doing research how we can use this data in TensorFlow. This was mostly research and I am planning to start implementing this over the coming weeks.
+
+## Week 13: 05-12-2022
+This week was a bit of a hazy week, a few in the group including myself were sick. I spent Wednesday at home but the rest of the week was at Fontys working as usual. I started the week with testing the new motor and making sure that it responds to the same inputs as the old one. I also created the class to interface with the servo motor so that we can now use that too. Most of Tuesday was spent on updating my PDP with all the progress thus far.
+
+To wrap the week up I reworked the OpenCV script to work with a live video stream. This worked pretty well and we will be able to use it in the coming weeks.
+
+# Week 14: 12-12-2022
+This week I started setting everything up to train our model for driving the track. After discussing with a machine learning engineer we deduced the best aproach would be to create a virtual enviroment in Unreal Engine and integrate AirSim to expose API's in order to controll the vehicle from the python script.
+
+Getting the unreal enviroment setup is proving to be a lot of work. The AirSim documentation is not supper clear as it's different parts dont seem to have always been updated when new version were released. Importing our vehicle into Unreal Engine was also a challange as it first had to be exported to Blender and rigged. There are still some issues with the vehicle including the wheels falling off. The setup with AirSim will likely take a few more days, but hopefully end of next week we can start running some trainings.
+
 ## Feedback Sessions
-Writeup of feedback sessions coming
+### Feedback Session: 08-12-2022
+For this feedback session we went one by one and updated the teacher and the group on where we are currently in regards to our goals. My goals are currently all on track, there was no real feedback from the group or the teacher. Everyone was pleased with my progression and group leadership.
