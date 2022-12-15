@@ -42,7 +42,7 @@ This week was a bit of a hazy week, a few in the group including myself were sic
 
 To wrap the week up I reworked the OpenCV script to work with a live video stream. This worked pretty well and we will be able to use it in the coming weeks.
 
-# Week 14: 12-12-2022
+## Week 14: 12-12-2022
 This week I started setting everything up to train our model for driving the track. After discussing with a machine learning engineer we deduced the best aproach would be to create a virtual enviroment in Unreal Engine and integrate AirSim to expose API's in order to controll the vehicle from the python script.
 
 Getting the unreal enviroment setup is proving to be a lot of work. The AirSim documentation is not supper clear as it's different parts dont seem to have always been updated when new version were released. Importing our vehicle into Unreal Engine was also a challange as it first had to be exported to Blender and rigged. There are still some issues with the vehicle including the wheels falling off. The setup with AirSim will likely take a few more days, but hopefully end of next week we can start running some trainings.
