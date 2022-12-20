@@ -38,5 +38,8 @@ I have mostly been acting as tech support with most of my time being spended on 
 ## Week 13: 5-12-2023
 I have mostly been working on a few algorithems for Floris and have been started with creating a script to read data from the lidar.
 
+## Week 14: 12-12-2023
+I have completed a script that transforms the output from the lidar into 2 arryas of data that contain the angles and distance respectively. And I have started working on a script to reda the Hall-effect sensors.
+
 ## PDP Feedback
   *Keep checking if you're still on the right track. And Stop when you need to.
