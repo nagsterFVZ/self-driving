@@ -26,7 +26,9 @@ This week we printed a new chassis, we did this using 2 materials so we could le
 ## Week 12: 28-11-2022
 This week was a little les productive for me, still made some changes to the chassis. Also did some testing with Floris to check clearances and if everything runs smoothly. Then I sent the adjusted chassis to the printing lab so we had something to test on. We needen a new brushless motor that was compatible with our battery and ESC, we calculated new speeds etc. I also did some more documentation. 
 ## Week 13: 05-12-2022
-This week we made obstcles for the track, made some minor modifications to the car that had to be done. We also started thinking about how we wanted our work instruction to be. Also worked on my personal development plan, updated with what I've done the past weeks.
+This week we made obstacles for the track, made some minor modifications to the car that had to be done. We also started thinking about how we wanted our work instruction to be. Also worked on my personal development plan, updated with what I've done the past weeks.
+## Week 14: 12-12-2022
+This week we made a partslist that includes self made parts, nuts, bolts etc. that are needed to assemble the complete chassis. When this was finished I started thinking about what kind of instructions for assembling the chassis we want. We came up with a powerpoint with animations, in the slide tools and parts will be displayed, aswell as the subassembly and animation of how it goes together. We also looked at how we want to pull 60% of our total weight. We found a trailer that we can buy for cheap and easily attach to the car. 
 ## Feedback Sessions
 ### First Feedback Session: 22-09-2022
 Write down a date with revision number, the rest was good and no problems were found.
