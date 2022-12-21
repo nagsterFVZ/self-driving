@@ -35,8 +35,11 @@ I have been helping Floris with the software. But was not the most productive we
 ## Week 12: 28-11-2022
 I have mostly been acting as tech support with most of my time being spended on cleaning and recalibrating the 3d printer
 
-## Week 13: 5-12-2023
+## Week 13: 5-12-2022
 I have mostly been working on a few algorithems for Floris and have been started with creating a script to read data from the lidar.
+
+## Week 14: 12-12-2022
+I have completed a script that transforms the output from the lidar into 2 arryas of data that contain the angles and distance respectively. And I have started working on a script to reda the Hall-effect sensors.
 
 ## PDP Feedback
   *Keep checking if you're still on the right track. And Stop when you need to.
