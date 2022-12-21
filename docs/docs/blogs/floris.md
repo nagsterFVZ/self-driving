@@ -47,6 +47,9 @@ This week I started setting everything up to train our model for driving the tra
 
 Getting the unreal enviroment setup is proving to be a lot of work. The AirSim documentation is not supper clear as it's different parts dont seem to have always been updated when new version were released. Importing our vehicle into Unreal Engine was also a challange as it first had to be exported to Blender and rigged. There are still some issues with the vehicle including the wheels falling off. The setup with AirSim will likely take a few more days, but hopefully end of next week we can start running some trainings.
 
+## Week 15: 19-12-2022
+During the course of this week I have spent most of my time fixing the AirSim simulation. I managed to get all the physics for our custom vehicle sorted out. A good amount of time was also spent going through AirSim documentation and examples to try and figure out how different functions and classes work. After some time I managed to fix the camera position and angle for the training so that they match the camera on the vehicle. The FOV of the camera has also been adjusted to better suite the lens we use on the real vehicle.
+
 ## Feedback Sessions
 ### Feedback Session: 08-12-2022
 For this feedback session we went one by one and updated the teacher and the group on where we are currently in regards to our goals. My goals are currently all on track, there was no real feedback from the group or the teacher. Everyone was pleased with my progression and group leadership.
