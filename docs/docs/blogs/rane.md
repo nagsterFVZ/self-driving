@@ -29,7 +29,7 @@ This week was a little les productive for me, still made some changes to the cha
 This week we made obstacles for the track, made some minor modifications to the car that had to be done. We also started thinking about how we wanted our work instruction to be. Also worked on my personal development plan, updated with what I've done the past weeks.
 ## Week 14: 12-12-2022
 This week we made a partslist that includes self made parts, nuts, bolts etc. that are needed to assemble the complete chassis. When this was finished I started thinking about what kind of instructions for assembling the chassis we want. We came up with a powerpoint with animations, in the slide tools and parts will be displayed, aswell as the subassembly and animation of how it goes together. We also looked at how we want to pull 60% of our total weight. We found a trailer that we can buy for cheap and easily attach to the car. 
-## Week 14: 19-12-2022
+## Week 15: 19-12-2022
 This week I cleaned up the cad assembly so it would go together the same way in cad as you would do reallife. With this update I could animate the sub-asemblies for making the work instruction. I also started with the basic lay-out of the work instruction and made the first slide.
 ## Feedback Sessions
 ### First Feedback Session: 22-09-2022
