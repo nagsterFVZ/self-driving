@@ -11,3 +11,26 @@ Did research for the front suspension and made a lot of prototypes. We decided o
 Perfecting the prototypes made in week 4 and starting research on the rear axle/suspension. Also started research on how to steer the car.
 ## Week 6: 10-10-2022
 Did research on how to steer the car. Made a decision on what type of rear suspension to use after the meeting with Chris. Also started on chassis design together with Rane. Wrote an update of my PDP.
+## Week 7: 17-10-2022
+Further work on the chassis and finished the suspension. We have started work on the drivetrain and how to mount the diff and the gears in the chassis. 
+## Week 8: 31-10-2022
+Final optimizations on the chassis to make it ready to print. Try to iron out most of the issues/mistakes. The first version of the chassis was sent to the printer on thursday.
+## Week 9: 07-11-2022 - Midterm
+This week was mainly about optimizing the chassis that we had, there were some errors and things we forgot, so we started on fixing that. Some time was also spent in making the presentation for the midterm.
+## Week 10: 14-11-2022
+Started work on optimizing v3 of the chassis, and sent v2 to the printer. V3 will be easier to print and uses a lot less material. We shaved about 9 hours off the printing time. We also sent the motor mount to the laser machine and made the bend in the mount
+
+## Week 11: 21-11-2022
+Used a lathe to make front and rear axles, corne told me how to use it. The chassis was also printed with water soluble supports, which was not ideal. The soluble supports left a sticky residue, which was difficult and gross to remove, the process also left a lot of water inside the print.. The soluble supports also took a lot more time, as the plastic first needed to dry, then the chassis could be printed and last the print had to be left in a sink full of water for a day. We decided not to use those anymore in future prints.
+
+## Week 12: 28-11-2022
+I was absent on monday. On tuesday I helped Laurens to setup a spare laptop with linux to be able to program te PYNQ board. For the rest of the week my main priorities were to hand in some assignments for different subjects. I also helped to search for and do the calculations for the new motor, which was ordered at the end of the week.
+
+## Week 13: 05-12-2022
+This week began quite badly, as I stayed home sick. The rest of the week I did some of the smaller things, like updating the front wheelhubs and making a hole in the chassis bigger. I also made some modular obstacles (cubes), which have six identical sides and can be easily made on the laser cutter. We also had a feedback session with Wiely and peer reviewing. There were some small things, but it was good overall. The only points I got were that I need to be more thourough with my documentation and the formulation of my goals.
+
+## Week 14: 12-12-2022
+This week I was sick. Tuesday and wednesday I was absent, and the rest of the week I could not get the energy to really accomplish anything
+
+## Week 15: 19-12-2022
+Still kinda sick, but did get some things done. We had an information session that was not really useful, and a workshop on thursday. This workshop was about the different ways to pitch a project to someone in a short time to get them interested. 

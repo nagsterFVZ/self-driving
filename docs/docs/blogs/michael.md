@@ -18,4 +18,31 @@ This week I have been working on the prototype of the electrical system and I ha
 I have been working on the electrical system and on the Requirements Document
 
 ## Week 7: 17-10-2022
-I have looking into the Pynq Z2 and the posibility of accelerating line detection using the Pynq
+I have been looking into the Pynq Z2 and the possibility of accelerating line detection using the Pynq
+
+## Week 8: 31-10-2022
+I have been working on how to program the Pynq Z2.
+
+## Week 9: 7-11-2022
+I have been working on the presentation.
+
+## Week 10: 14-11-2022
+I have been working on troubleshooting why the software used to program the Pynq z2, doesn't work.
+
+## Week 11: 21-11-2022
+I have been helping Floris with the software. But was not the most productive week for me.
+
+## Week 12: 28-11-2022
+I have mostly been acting as tech support with most of my time being spended on cleaning and recalibrating the 3d printer
+
+## Week 13: 5-12-2022
+I have mostly been working on a few algorithems for Floris and have been started with creating a script to read data from the lidar.
+
+## Week 14: 12-12-2022
+I have completed a script that transforms the output from the lidar into 2 arryas of data that contain the angles and distance respectively. And I have started working on a script to reda the Hall-effect sensors.
+
+## Week 15: 19-12-2022
+I have been writing a script to read the rpm of the wheels using a magnet and a Hall-effect sensor. And I have been looking into which parts of the 3d printer needed to be replaced and ordered these.
+
+## PDP Feedback
+  *Keep checking if you're still on the right track. And Stop when you need to.
