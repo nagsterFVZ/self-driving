@@ -37,3 +37,12 @@ I also did some work on modeling in solidworks, but that will most likely not be
 ## Week 12: 28-11-2022
 mostly worked on PYNQ-board. The progress is slow, because I need to learn all the stuff that is behind it, like the programming language and the terms used. 
 Next to that we decided on a different motor, because the one we have now is way too powerful. We went with a different one that works with the ESC we have, so that we have to change almost nothing about the design and code.
+
+## Week 13: 5-12-2022
+This week I worked on some different things. Mostly PYNQ again. I started working on trying to get the lidar to work with the pynq. 
+
+## Week 14: 12-12-2022
+This week I was sick. Tuesday and wednesday I was absent, and the rest of the week I could not get the energy to really accomplish anything
+
+## Week 15: 19-12-2022
+Still kinda sick, but did get some things done. We had an information session that was not really useful, and a workshop on thursday. This workshop was about the different ways to pitch a project to someone in a short time to get them interested. 

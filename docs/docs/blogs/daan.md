@@ -31,12 +31,21 @@ This week I Learned how to use the cnc machine and made flat surfaces on the axl
 
 ## Week 11: 21-10-2022
 This week I Finished the Differential. In its current form it will be used in the car and is being tested. My schedule for the project has cleared up a bit because the differential is finished, therefore I am starting a completely new aspect of the project which is learning how to use a generative design process for certain parts of the car.
+
 ## Week 12: 28-10-2022
 This week we started to assemble the complete car. It made its first few actual metres on a flat surface with an ethernet cable connected. We came across various problems and improvements. I made flat surfaces on the axles to make sure the axle wasn't sliding through the set screws. I evaluated different parts of the wheel mounting system to remove a lot of play in this area. Furthermore I started to dive into the process of creating a generative design and gathering information to start doing calculations next week. 
+
 ## Week 13: 05-12-2022
 This week I worked on My PDP to further explain the progress I have made so far on my goals. I made sure that various parts were updated for dual bearings and that they were printed. Together with Corne we ordered new parts that were broken or came in faulty. We reassembled the car with a new version of the chassis. I made sure the steering rods were aligned with the wheels. At the end of the week Floris was able to demo the steering motion with the servo.
+
 ## Week 14: 12-12-2022
 This week I started with a little side project which was modelling the NXP track in solidworks so that Floris could use this with the unrealengine. With these models of the track pieces we are now able to create any track by combining the parts together in an assembly. The rest of the week I worked on the calculations and first generative design for the chassis components. This is still a big learning curve for me for fusion 360.
+
+## Week 15: 19-12-2022
+I created the first generative design component. 
+
+## Week 16: 11-01-2023
+I finished all the technical drawings for the axle components of the car. These were sent to Shapeways.com for a quote for 10 cars. We started to print all the components of the car downstairs for a final prototype. Making sure that all colours were uniform. At the end of the week Michael and I started work on the poster
 
 ## Feedback Sessions
 ### Feedback Session: 22-09-2022

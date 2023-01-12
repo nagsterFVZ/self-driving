@@ -28,3 +28,9 @@ I was absent on monday. On tuesday I helped Laurens to setup a spare laptop with
 
 ## Week 13: 05-12-2022
 This week began quite badly, as I stayed home sick. The rest of the week I did some of the smaller things, like updating the front wheelhubs and making a hole in the chassis bigger. I also made some modular obstacles (cubes), which have six identical sides and can be easily made on the laser cutter. We also had a feedback session with Wiely and peer reviewing. There were some small things, but it was good overall. The only points I got were that I need to be more thourough with my documentation and the formulation of my goals.
+
+## Week 14: 12-12-2022
+This week I was sick. Tuesday and wednesday I was absent, and the rest of the week I could not get the energy to really accomplish anything
+
+## Week 15: 19-12-2022
+Still kinda sick, but did get some things done. We had an information session that was not really useful, and a workshop on thursday. This workshop was about the different ways to pitch a project to someone in a short time to get them interested. 
