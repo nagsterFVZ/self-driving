@@ -1,59 +1,57 @@
-import RPi.GPIO as GPIO
+from board import SCL, SDA
+import busio
+from adafruit_pca9685 import PCA9685
 from time import sleep
 
-class ESC:
-    GPIO.setmode(GPIO.BCM)
-    escPin = 18
-    minDuty = 5
-    maxDuty = 10
-    GPIO.setwarnings(False)
-    GPIO.setup(escPin,GPIO.OUT)
-    pwm = GPIO.PWM(escPin,50)
-    pwm.start(0)
+class Esc:
+    i2c_bus = busio.I2C(SCL, SDA)
+    pca = PCA9685(i2c_bus)
+    pca.frequency = 46
+    pwm = pca.channels[0]
+    minDuty = 3276
+    maxDuty = 6553
+    midDuty = 4915
 
-    def cal_phase_1(self):
-        ESC.pwm.ChangeDutyCycle(ESC.maxDuty)
+    def test():
+        return True
+
+    def cal_phase_1():
+        Esc.pwm.duty_cycle = Esc.maxDuty
+        return True
         
-    def cal_phase_2(self):
-        ESC.pwm.ChangeDutyCycle(ESC.minDuty)
+    def cal_phase_2():
+        Esc.pwm.duty_cycle = Esc.minDuty
         sleep(12)
-        ESC.pwm.ChangeDutyCycle(0)
+        Esc.pwm.duty_cycle = 0
         sleep(2)
-        ESC.pwm.ChangeDutyCycle(ESC.minDuty)
-        sleep(1)
-        ESC.pwm.ChangeDutyCycle(ESC.speedCalc(0))
+        Esc.pwm.duty_cycle = Esc.minDuty
+        sleep(2)
+        Esc.pwm.duty_cycle = Esc.midDuty
+        return True
 
-    def arm(self):
-        ESC.pwm.start(0)
-        sleep(1)
-        ESC.pwm.ChangeDutyCycle(ESC.maxDuty)
-        sleep(1)
-        ESC.pwm.ChangeDutyCycle(ESC.minDuty)
-        sleep(1)
-        ESC.control()
+    def arm():
+        Esc.pwm.duty_cycle = Esc.midDuty
+        sleep(2)
+        Esc.pwm.duty_cycle = 0
+        return True
 
-    def control(self):
-        sleep(1)
-        ESC.pwm.ChangeDutyCycle(ESC.speedCalc(20))
-        sleep(5)
-        ESC.pwm.ChangeDutyCycle(ESC.speedCalc(0))
-        ESC.pwm.stop()
+    def control(speed):
+        Esc.pwm.duty_cycle = Esc.speedCalc(speed)
+        return True
 
+    def safe():
+        Esc.pwm.duty_cycle = 0
+        return True
+
+    #max 6553; min 3276;
     def speedCalc(percent):
         if(percent > 100):
-            return 7.5
+            return 4915
         if(percent < -100):
-            return 7.5
+            return 4915
         if(percent == 0):
-            return 7.5
-        if(percent < 0):
-            return 0.02*percent+7
-        if(percent > 0):
-            return 0.02*percent+8
-    
-esc = ESC()
-# esc.cal_phase_1()
-# input()
-# esc.cal_phase_2()
-input()
-esc.control()
+            return 4915
+        if(percent <= 100 and percent > 0):
+            return int(1310 / 100 * percent + 5243)
+        if(percent >= -100):
+            return int(1310 / 100 * percent + 4587)

@@ -32,6 +32,28 @@
         >Refresh</v-btn
       >
     </v-row>
+    <v-row class="pa-4">
+      <DashboardButtonCard
+        title="ESC SAFE"
+        @click="escSafe"
+        :loading="escActions.safe.loading"
+      />
+      <DashboardButtonCard
+        title="ESC ARM"
+        @click="escArm"
+        :loading="escActions.arm.loading"
+      />
+      <DashboardButtonCard
+        title="ESC CAL 1"
+        @click="escCal1"
+        :loading="escActions.cal1.loading"
+      />
+      <DashboardButtonCard
+        title="ESC CAL 2"
+        @click="escCal2"
+        :loading="escActions.cal2.loading"
+      />
+    </v-row>
     <v-row>
       <v-col v-for="chart in charts" :key="chart.key" cols="4">
         <DashboardLineCard :chartData="chart" />
@@ -43,11 +65,18 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import DashboardLineCard from "../components/DashboardLineCard.vue";
+import DashboardButtonCard from "../components/Dashboard/DashboardButtonCard.vue";
 
 onMounted(() => {
   getStats();
 });
 
+const escActions = ref({
+  safe: { state: false, loading: false },
+  arm: { state: false, loading: false },
+  cal1: { state: false, loading: false },
+  cal2: { state: false, loading: false },
+});
 const charts = ref([]);
 const stats = ref({});
 const dataRange = ref([0, 300]);
@@ -110,4 +139,55 @@ function msToTime(s) {
 
   return date.toLocaleTimeString("it-IT");
 }
+
+async function escSafe() {
+  escActions.value.safe.loading = true;
+  await fetch("/api/esc/safe", {
+    method: "GET",
+  }).then((response) => {
+    response.json().then((data) => {
+      escActions.value.safe.loading = !data.complete;
+    });
+  });
+}
+async function escArm() {
+  escActions.value.arm.loading = true;
+  await fetch("/api/esc/arm", {
+    method: "GET",
+  }).then((response) => {
+    response.json().then((data) => {
+      escActions.value.arm.loading = !data.complete;
+    });
+  });
+}
+async function escCal1() {
+  escActions.value.cal1.loading = true;
+  await fetch("/api/esc/cal/1", {
+    method: "GET",
+  }).then((response) => {
+    response.json().then((data) => {
+      escActions.value.cal1.loading = !data.complete;
+    });
+  });
+}
+async function escCal2() {
+  escActions.value.cal2.loading = true;
+  await fetch("/api/esc/cal/2", {
+    method: "GET",
+  }).then((response) => {
+    response.json().then((data) => {
+      escActions.value.cal2.loading = !data.complete;
+    });
+  });
+}
 </script>
+<style scoped>
+.card-button {
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.card-button:active {
+  transform: scale(0.9);
+}
+</style>
