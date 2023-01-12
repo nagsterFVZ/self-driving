@@ -54,5 +54,9 @@ In deze week ben ik bezig geweest met het assembleren van de nieuwe EB. In het n
 
 ## Week 13: 05-12-2022
 Tot nu toe maakt de auto gebruik van de sensoren die zijn aangesloten op een test pcb. Op deze pcb zijn alle componenten gesoldeerd en verbonden door middel van draden. Dit is een vrij grote pcb ten opzichte van wat hij kan. Om de auto te reproduceren heb ik in deze week een pcb ontworpen die door een bedrijf maakbaar is en die op een makkelijke manier te reproduceren is. deze pcb gaat ook een stuk kleiner worden en zal dus ook een stuk minder wegen.
+
 ## Week 14: 12-12-2022
 In deze week ben ik verder gegaan met het ontwerpen van de nieuwe pcb. In de vorige week heb ik vooral het schema gemaakt en deze week ben ik begonnen met het ontwerpen van het daadwerkelijke pcb. dit houd in dat alles gepositioneerd moet worden en dat alle sporen op de juiste laag gelegd moeten worden.
+
+## Week 15: 19-12-2022
+Aan het begin van de week heb ik de PCB geordered bij een pcb maak bedrijf en is eind van deze week binnen. ik ben de rest van de week ben ik bezig geweest met de promotie video geweest voor de tentoonstelling en het ontwerpen van de nieuwe EB voor de nieuwe PCB.
