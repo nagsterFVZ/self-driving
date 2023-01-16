@@ -40,10 +40,80 @@
         :gamepad="gamepad"
       />
     </div>
+    <v-card
+      ><v-card-title>Socket Status</v-card-title
+      ><v-card-text>{{ socketStatus }}</v-card-text></v-card
+    >
+    <v-card
+      ><v-card-title>Controller</v-card-title
+      ><v-card-text>{{ controller.status }}</v-card-text></v-card
+    >
   </div>
 </template>
-<script setup lang="ts">
+<script setup>
 import { useGamepad } from "@vueuse/core";
 import Gamepad from "../components/controlls/Gamepad.vue";
+import { io } from "socket.io-client";
+import { ref, shallowRef } from "@vue/reactivity";
+import { watch } from "@vue/runtime-core";
+
 const { isSupported, gamepads } = useGamepad();
+const socket = io("http://192.168.178.192:5000");
+
+const socketStatus = ref(false);
+const controller = ref({ buttons: [], axes: [] });
+
+socket.on("connect", () => {
+  socketStatus.value = true;
+  console.log("🟢 Socket Connected"); // true
+});
+
+socket.on("disconnect", () => {
+  socketStatus.value = false;
+  console.log("🔴 Socket Disconnected"); // false
+});
+
+//socket.emit("control", { throttle: 0.0 });
+
+watch(
+  () => gamepads,
+  (newValue) => {
+    const prev = JSON.parse(JSON.stringify(controller));
+
+    controller.value.buttons[0] = newValue.value[0].buttons[14];
+    controller.value.buttons[1] = newValue.value[0].buttons[15];
+    controller.value.buttons[2] = newValue.value[0].buttons[2];
+    controller.value.buttons[3] = newValue.value[0].buttons[1];
+    controller.value.axes[0] = newValue.value[0].axes[0];
+    controller.value.axes[1] = newValue.value[0].buttons[7].value;
+    controller.value.axes[2] = newValue.value[0].buttons[6].value;
+    if (prev._value?.buttons?.length > 0) {
+      const payload = [];
+      controller.value.buttons.forEach((button, index) => {
+        if (
+          button.pressed != prev._value.buttons[index].pressed &&
+          button.pressed
+        ) {
+          payload.push({ button: button, id: index });
+        }
+      });
+      controller.value.axes.forEach((axe, index) => {
+        if (axe >= 0.05 || axe <= -0.05) {
+          payload.push({ axes: axe, id: index });
+        }
+      });
+      if (payload.length > 0) {
+        socket.emit("control", payload);
+      }
+    }
+
+    // if (controller.value.buttons.some((element) => element.pressed)) {
+    //   controller.value.status = "Button Press";
+    //   socket.emit("control", controller.value);
+    // } else {
+    //   controller.value.status = "";
+    // }
+  },
+  { deep: true }
+);
 </script>
