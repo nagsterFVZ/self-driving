@@ -8,6 +8,7 @@ class Esc:
     pca = PCA9685(i2c_bus)
     pca.frequency = 46
     pwm = pca.channels[0]
+    speed = 0
     minDuty = 3276
     maxDuty = 6553
     midDuty = 4915
@@ -38,6 +39,11 @@ class Esc:
     def control(speed):
         Esc.pwm.duty_cycle = Esc.speedCalc(speed)
         return True
+    
+    def incControl(modifier):
+        Esc.speed = Esc.speed + modifier
+        Esc.pwm.duty_cycle = Esc.speedCalc(Esc.speed)
+        return True
 
     def safe():
         Esc.pwm.duty_cycle = 0
@@ -46,9 +52,9 @@ class Esc:
     #max 6553; min 3276;
     def speedCalc(percent):
         if(percent > 100):
-            return 4915
+            return int(1310 / 100 * 100 + 5243)
         if(percent < -100):
-            return 4915
+            return int(1310 / 100 * -100 + 4587)
         if(percent == 0):
             return 4915
         if(percent <= 100 and percent > 0):

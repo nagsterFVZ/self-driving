@@ -28,7 +28,7 @@ sensors = [
 
 
 picam2 = Picamera2()
-camera_config = picam2.create_video_configuration(main={"format": 'XRGB8888', "size": (1920, 1080)}, transform=Transform(vflip=0))
+camera_config = picam2.create_video_configuration(main={"format": 'XRGB8888', "size": (270, 180)}, transform=Transform(vflip=0))
 picam2.configure(camera_config)
 picam2.start()
 time.sleep(2.0)
@@ -41,25 +41,25 @@ def gen_frames():
         # ret, buffer = cv2.imencode('.jpg', im)
         # frame = buffer.tobytes()
 
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        ret, binary = cv2.threshold(img,200,255,cv2.THRESH_BINARY)
-        thresh_image = binary.astype(np.uint8)
-        kernel = np.ones((5,5),np.uint8)
-        erosion = cv2.erode(thresh_image,kernel,iterations = 3)
-        dilation = cv2.dilate(erosion,kernel,iterations = 5)
-        contours, hierarchy = cv2.findContours(dilation, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-        largestArea = 0
-        largest = None
-        for contour in contours:
-            area = cv2.contourArea(contour) 
-            if (area > largestArea):
-                largestArea = area
-                largest = [contour]
+        # img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        # ret, binary = cv2.threshold(img,200,255,cv2.THRESH_BINARY)
+        # thresh_image = binary.astype(np.uint8)
+        # kernel = np.ones((5,5),np.uint8)
+        # erosion = cv2.erode(thresh_image,kernel,iterations = 3)
+        # dilation = cv2.dilate(erosion,kernel,iterations = 5)
+        # contours, hierarchy = cv2.findContours(dilation, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        # largestArea = 0
+        # largest = None
+        # for contour in contours:
+        #     area = cv2.contourArea(contour) 
+        #     if (area > largestArea):
+        #         largestArea = area
+        #         largest = [contour]
 
-        out = np.zeros((1080, 1920, 3), dtype = np.uint8)
-        cv2.drawContours(out, largest, -1, color=(255, 255, 255), thickness=cv2.FILLED)
+        # out = np.zeros((1080, 1920, 3), dtype = np.uint8)
+        # cv2.drawContours(out, largest, -1, color=(255, 255, 255), thickness=cv2.FILLED)
 
-        ret, buffer = cv2.imencode('.jpg', out)
+        ret, buffer = cv2.imencode('.jpg', img)
         frame = buffer.tobytes()
         yield (b'--frame\r\n'
                 b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')  # concat frame one by one and show result
