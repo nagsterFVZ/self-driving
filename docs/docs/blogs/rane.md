@@ -31,6 +31,8 @@ This week we made obstacles for the track, made some minor modifications to the 
 This week we made a partslist that includes self made parts, nuts, bolts etc. that are needed to assemble the complete chassis. When this was finished I started thinking about what kind of instructions for assembling the chassis we want. We came up with a powerpoint with animations, in the slide tools and parts will be displayed, aswell as the subassembly and animation of how it goes together. We also looked at how we want to pull 60% of our total weight. We found a trailer that we can buy for cheap and easily attach to the car. 
 ## Week 15: 19-12-2022
 This week I cleaned up the cad assembly so it would go together the same way in cad as you would do reallife. With this update I could animate the sub-asemblies for making the work instruction. I also started with the basic lay-out of the work instruction and made the first slide.
+## Week 16: 09-01-2023
+In this week I went on with the work instruction, the basic layout now is starting to come together and we have done all the suspension and differential parts. Meaning that we only need to do the main chassis work. 
 ## Feedback Sessions
 ### First Feedback Session: 22-09-2022
 Write down a date with revision number, the rest was good and no problems were found.
