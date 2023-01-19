@@ -44,5 +44,8 @@ I have completed a script that transforms the output from the lidar into 2 arrya
 ## Week 15: 19-12-2022
 I have been writing a script to read the rpm of the wheels using a magnet and a Hall-effect sensor. And I have been looking into which parts of the 3d printer needed to be replaced and ordered these.
 
+## Week 16: 09-01-2023
+I have been working on a lot of parts of the project. I have created the project information and have been working with DAan on the poster for the Symposium. I also have been working on replacing the broken parts of the 3d printer and recalibrated it.
+
 ## PDP Feedback
   *Keep checking if you're still on the right track. And Stop when you need to.
