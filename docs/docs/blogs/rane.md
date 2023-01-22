@@ -29,8 +29,12 @@ This week was a little les productive for me, still made some changes to the cha
 This week we made obstacles for the track, made some minor modifications to the car that had to be done. We also started thinking about how we wanted our work instruction to be. Also worked on my personal development plan, updated with what I've done the past weeks.
 ## Week 14: 12-12-2022
 This week we made a partslist that includes self made parts, nuts, bolts etc. that are needed to assemble the complete chassis. When this was finished I started thinking about what kind of instructions for assembling the chassis we want. We came up with a powerpoint with animations, in the slide tools and parts will be displayed, aswell as the subassembly and animation of how it goes together. We also looked at how we want to pull 60% of our total weight. We found a trailer that we can buy for cheap and easily attach to the car. 
-## Week 14: 19-12-2022
+## Week 15: 19-12-2022
 This week I cleaned up the cad assembly so it would go together the same way in cad as you would do reallife. With this update I could animate the sub-asemblies for making the work instruction. I also started with the basic lay-out of the work instruction and made the first slide.
+## Week 16: 09-01-2023
+In this week I went on with the work instruction, the basic layout now is starting to come together and we have done all the suspension and differential parts. Meaning that we only need to do the main chassis work. 
+## Week 17: 16-01-2023
+This week I reassembled the chassis since it was destroyed at the end of last week. After I've done that I worked on the final project report. 
 ## Feedback Sessions
 ### First Feedback Session: 22-09-2022
 Write down a date with revision number, the rest was good and no problems were found.
@@ -38,3 +42,5 @@ Write down a date with revision number, the rest was good and no problems were f
 During the session I asked if there was any feedback, the answer was everything looks good as is, no problems were found. 
 ### Third Feedback Session: 08-12-2022
 This session was a little different form the previous, we had to give feedback to eachother instead of getting it from our mentor. After my explanation I didn't recieve feedback from my fellow students. This means I am going to keep doing what I am doing since not getting feedback means I'm doing good work. 
+### Third Feedback Session: 19-01-2023
+Not that much feedback for this week either, just make sure you can explain what you did and how you did it. 
